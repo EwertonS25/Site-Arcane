@@ -2,9 +2,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
-   . margin: 0;
+    margin: 0;
+    height: 100vh;
     padding: 0;
 }
 
@@ -12,6 +12,25 @@ header {
     color: #fff;
     text-align: center;
 }
-#Capa{
-    top
+
+div.container{
+    position: relative;
+}
+
+img.capa{
+    width: 100%;
+    height: auto;
+    clip-path: polygon(0 0,100% 0, 100% 70%, 0 100%);
+ 
+}
+
+img.logo{
+    position: absolute;
+    top: 200px;
+    left:300px;
+    width: 50%;
+    height: auto;
+    bottom: 0;
+    transform: translateX(40%);
+    transform: rotate(-6.5deg);
 }
