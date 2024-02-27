@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -18,7 +17,7 @@ div.container {
 }
 
 img.capa {
-    clip-path:polygon(0 0, 100% 0, 100% 80%, 0% 100%) ;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     width: 100%;
     height: auto;
 }
@@ -34,9 +33,28 @@ img.logo {
     transform: rotate(-5.5deg);
 }
 
+div.corpo-container {
+    position: relative;
+}
+
 img.corpo {
     width: 100%;
     height: auto;
     margin-top: -8%;
     clip-path: polygon(0 13.5%, 100% -0.2%, 100% 100%, 0 100%);
+}
+
+.video {
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 50%;
+    height: 60%;
+    pointer-events: none; /* Permite interação com elementos subjacentes, como a imagem */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
