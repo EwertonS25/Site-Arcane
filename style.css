@@ -51,7 +51,7 @@ img.corpo {
     left: 0;
     width: 50%;
     height: 60%;
-    pointer-events: none; /* Permite interação com elementos subjacentes, como a imagem */
+    pointer-events: none;
 }
 
 iframe {
