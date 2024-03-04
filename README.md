@@ -1,2 +1,0 @@
-# Site-Arcane
-Projeto Arcane

@@ -3,8 +3,9 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     margin: 0;
-    height: 100vh;
     padding: 0;
+    height: 100vh;
+    background-color: #240617;
 }
 
 header {
@@ -12,49 +13,89 @@ header {
     text-align: center;
 }
 
-div.container {
+.container {
     position: relative;
 }
 
-img.capa {
+.capa {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     width: 100%;
     height: auto;
+    z-index: 1;
 }
 
-img.logo {
+.logo {
     position: absolute;
-    top: 180px;
-    left: 400px;
+    margin-top: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5.5deg);
     width: 50%;
+    max-width: 500px;
     height: auto;
-    bottom: 0;
-    transform: translateX(40%);
-    transform: rotate(-5.5deg);
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-div.corpo-container {
+.corpo-container {
     position: relative;
 }
 
-img.corpo {
+.corpo {
     width: 100%;
     height: auto;
-    margin-top: -8%;
+    margin-top: -9%;
     clip-path: polygon(0 13.5%, 100% -0.2%, 100% 100%, 0 100%);
+    position: relative;
+    z-index: 1;
 }
 
 .video {
-    padding: 10px;
     position: absolute;
-    top: 20%;
+    top: 0;
     left: 0;
+    padding: 1vh;
+    margin-top: 10%;
     width: 50%;
-    height: 60%;
-    pointer-events: none;
+    height: 55%; 
+    z-index: 2; 
+    border: 2.5px solid #000;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.447);
 }
 
 iframe {
     width: 100%;
     height: 100%;
 }
+
+footer{
+    margin: 0;
+    padding: 0;
+}
+
+.rodape-container{
+    position: relative;
+}
+
+.imagemfinal {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; 
+}
+
+.imgnetflix {
+    position: absolute;
+    top: -0%;
+    left: 14%; /* Ajuste a distância da esquerda conforme necessário */
+    width: 30%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+
+
+
